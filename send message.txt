@@ -1,0 +1,20 @@
+public void sendMessage(){
+        try{
+            buffWriter.write(name);
+            buffWriter.newLine();
+            buffWriter.flush();
+
+            Scanner sc = new Scanner(System.in);
+
+            while(socket.isConnected()){
+                String messageToSend = sc.nextLine();
+                buffWriter.write(name + ": " + messageToSend);
+                buffWriter.newLine();
+                buffWriter.flush();
+
+            }
+        } catch(IOException e){
+            closeAll(socket, buffReader, buffWriter);
+
+        }
+    }

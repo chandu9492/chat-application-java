@@ -1,0 +1,5 @@
+Java chat applications are developed using the java programming language. Chat applications allow users to communicate with each other that should be in real-time. Where the messages are getting exchanged in real-time. It can run multiple client-server chats easily. Chat applications can be used for various purposes such as connecting with friends and using the application for business inquiries.
+
+To develop a chat application in java there are various methods or ways that one can develop the application. The most simple way is to use Java Socket Class and Thread Class to create client-server architecture, where the server represents the back end of the chat application and the client represents the front end of the chat application.
+
+This chat application will consist of three files Server.java represents the backend of the chat application and act as a provider, next is ClientHandler.java which implements thread and each message gets concurrently executed with the help of thread and it handles all the thread functionalities. The last Client.java represents the front-end part and how the client will work.
